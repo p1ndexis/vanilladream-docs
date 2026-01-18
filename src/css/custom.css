@@ -1,0 +1,28 @@
+/* GitBook style */
+
+.markdown {
+  font-size: 16px;
+}
+
+.table-of-contents {
+  border-left: 2px solid #2563eb;
+}
+
+.menu {
+  background: #020617;
+}
+
+.navbar {
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.footer {
+  background: #020617;
+}
+
+.admonition {
+  border-radius: 12px;
+  background: #020617;
+  border: 1px solid #1e293b;
+}
