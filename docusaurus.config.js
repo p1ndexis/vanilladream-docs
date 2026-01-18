@@ -7,8 +7,8 @@ const config = {
   tagline: 'Документация сервера VanillaDream',
   favicon: 'img/favicon.ico',
 
-  url: 'https://vanilladream.ru',
-  baseUrl: '/',
+  url: 'https://p1ndexis.github.io',
+  baseUrl: '/vanilladream-docs/',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
