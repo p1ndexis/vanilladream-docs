@@ -6,9 +6,13 @@ const config = {
   title: 'VanillaDream',
   tagline: 'Документация сервера VanillaDream',
   favicon: 'img/favicon.ico',
+  trailingSlash: false,
 
   url: 'https://p1ndexis.github.io',
   baseUrl: '/vanilladream-docs/',
+
+  organizationName: 'p1ndexis',
+  projectName: 'vanilladream-docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -21,19 +25,19 @@ const config = {
   presets: [
     [
       'classic',
-      ({
+      {
         docs: {
           sidebarPath: './sidebars.js',
         },
-        blog: false, // ❌ полностью отключаем блог
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      },
     ],
   ],
 
-  themeConfig: ({
+  themeConfig: {
     colorMode: {
       respectPrefersColorScheme: true,
       defaultMode: 'dark',
@@ -62,18 +66,8 @@ const config = {
         {
           title: 'Сервер',
           items: [
-            {
-              label: 'Начать играть',
-              to: '/docs/start',
-            },
-            {
-              label: 'Правила',
-              to: '/docs/rules',
-            },
-            {
-              label: 'Команды',
-              to: '/docs/commands',
-            },
+            { label: 'Начать играть', to: '/docs/intro' },
+            { label: 'Правила', to: '/docs/rules/general' },
           ],
         },
         {
@@ -93,7 +87,7 @@ const config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-  }),
+  },
 };
 
 export default config;
